@@ -1,0 +1,31 @@
+{% extends 'base_layout.html' %}
+{% set active_sidebar = "device-list" %}
+
+{% block mainpanel %}
+<div class="container">
+  <h1>Device List</h1>
+  <hr>
+  <div class="responsive-table">
+      <table id="device-datatable" class="table table--bordered">
+          <thead>
+              <tr>
+                  <th>Device Name</th>
+                  <th>Model</th>
+                  <th>Version</th>
+                  <th>IP Address</th>
+
+              </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+      </table>
+  </div>
+</div>
+
+<!-- table data will be populated dynamically by jquery/datatables -->
+<script src="/static/js/device-table.js"></script>
+{% endblock %}
+
+<!-- disable footer for this page  -->
+{% block footer %}{% endblock %}
