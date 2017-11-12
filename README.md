@@ -1,13 +1,34 @@
 # boilerplate - Hello World
 
- SOme change here
-
 Any applicable badges (build/documentation/collaboration/licenses should go here
+
 
 # Description
 
 Boilerplate is a starting point application for the IMAPEX team @ Cisco.
 
+This boilerplate contains the following
+
+* Flask
+* Flask-Restful
+* Cisco UI toolkit
+* NextUI for drawing network toplogies
+* Bootstrap
+* Samples for common use cases
+
+# Screenshots
+
+Display Network Topologies
+![alt text](./static/img/topology.png "Topology Sample")
+
+Create custom dashboards
+![alt text](./static/img/dashboard.png "Dashboard Sample")
+
+Manage devices
+![alt text](./static/img/device-list.png "Device List Sample")
+
+Customize using Cisco UI Kit
+![alt text](./static/img/patterns.png "Customize")
 
 # Installation
 
@@ -88,4 +109,3 @@ and an HTML report of the code coverage can be generated with the command::
 # License
 
 Include any applicable licenses here as well as LICENSE.TXT in the root of the repository
-
