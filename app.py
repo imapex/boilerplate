@@ -5,6 +5,7 @@ from views.dashboard import dashboard
 from views.device import device_list
 from views.patterns import patterns
 from api.device import Device
+from api.topology import Topology
 
 app = Flask(__name__)
 api = Api(app)
@@ -14,7 +15,8 @@ def index():
     return render_template('index.html')
 
 api.add_resource(Device, '/api/device')
-app.add_url_rule('/topology', endpoint='topology', view_func=topology)
+api.add_resource(Topology, '/api/topology')
+app.add_url_rule('/topology', endpoint='topology-view', view_func=topology)
 app.add_url_rule('/device', endpoint='device-list', view_func=device_list)
 app.add_url_rule('/dashboard', endpoint='dashboard', view_func=dashboard)
 app.add_url_rule('/patterns', endpoint='patterns', view_func=patterns)
